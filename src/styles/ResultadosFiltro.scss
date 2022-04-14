@@ -1,0 +1,62 @@
+
+.resFil {
+    // border: 3px solid red;
+    margin-top: 2rem;
+    .fil {
+        // border: 3px solid blue;
+
+        .filButton1 {
+            margin-left: 4rem;
+            margin-right: 1rem;
+        }
+
+        .filButton2 {
+            margin-left: 1rem;
+        }
+
+        .checks {
+            margin-left: 4rem;
+
+            .form-check-input {
+                width: 2rem !important;
+                height: 2rem !important;
+            }
+
+            .form-check-inline {
+                display: inline-block;
+                margin-right: 4rem !important;
+            }
+
+            label {
+                margin-top: .5rem !important;
+                margin-left: .5rem !important;
+            }
+
+            .form-check-input:checked {
+                background-color: #C4C4C4;
+                border-color: #C4C4C4;
+            }
+
+            .form-check-input:checked[type="checkbox"] {
+                background-image: url("../imagenes/Group.svg");
+            }
+        }
+    }
+    .result {
+        // border: 3px solid blue;
+    }
+}
+
+.range {
+    width: 60%;
+    // height: .5rem;
+    display: inline-block;
+    .form-range {
+        height: .5rem;
+    }
+}
+
+input[type=range]::-moz-range-thumb {
+    background-color: #2ba52e;
+    border: 3px solid #535353;
+}

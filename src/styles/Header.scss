@@ -1,4 +1,24 @@
-.App {
+
+// @import "variables.scss";
+
+.logo {
+	display: inline-block;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+.bi-house-fill {
+	font-size: 2rem;
+	color: #2ba52e;
+}
+
+.btnPry {
+	// color: #2ba52e;
+	background-color: #2ba52e;
+	border-color: #2ba52e;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +55,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
