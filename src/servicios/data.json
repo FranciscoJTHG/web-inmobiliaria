@@ -1,0 +1,67 @@
+{
+    "places": [
+        {
+            "name": "Valle, los Jardines",
+            "geometry": [
+                10.474685,
+                -66.9443814
+            ]
+        },
+        {
+            "name": "Las Mercedes",
+            "geometry": [
+                10.4807229,
+                -66.8665853
+            ]
+        },
+        {
+            "name": "Colinas de Bello Monte",
+            "geometry": [
+                10.4802976,
+                -66.8838028
+            ]
+        },
+        {
+            "name": "Nuevo Circo",
+            "geometry": [
+                10.4932947,
+                -66.9112257
+            ]
+        },
+        {
+            "name": "Capuchinos",
+            "geometry": [
+                10.4960839,
+                -66.9310584
+            ]
+        },
+        {
+            "name": "Los Samanes",
+            "geometry": [
+                10.456367,
+                -66.8594885
+            ]
+        },
+        {
+            "name": "Santa Fe",
+            "geometry": [
+                10.4603869,
+                -66.8702388
+            ]
+        },
+        {
+            "name": "La Castellana",
+            "geometry": [
+                10.5038967,
+                -66.8647027
+            ]
+        },
+        {
+            "name": "Cumbres de Curumo",
+            "geometry": [
+                10.4606559,
+                -66.8904357
+            ]
+        }
+    ]
+}
