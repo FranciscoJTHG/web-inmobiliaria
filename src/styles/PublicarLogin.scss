@@ -1,0 +1,46 @@
+
+.modal-dialog {
+    width: 350px;
+
+    .modal-header {
+        border-bottom: 0px solid #dee2e6;
+        // padding: .0rem .0rem
+    }
+
+    .titulo {
+        padding-left: 7rem;
+        margin-top: -2rem;
+        // color: #2ba52e;
+    }
+
+    .iniText {
+        padding-left: 4rem;
+        color: #535353;
+        margin-bottom: -.5rem;
+    }
+
+    .logo {
+        padding-left: 7rem;
+    }
+
+    .modal-footer {
+        border-top: 0px solid #dee2e6;
+        justify-content: center;
+        margin-top: -2rem;
+
+        .botonLog {
+            background-color: #2ba52e;
+            border: #2ba52e;
+            width: 90%;
+        }
+
+        .olvidoContraseña {
+            font-size: 13px;
+            color: #535353;
+        }
+
+        .registrar {
+            width: 90%;
+        }
+    }
+}

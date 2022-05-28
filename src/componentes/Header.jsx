@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Header.scss';
 import { Row, Button, Nav } from 'react-bootstrap';
+
+import PublicarLogin from './PublicarLogin';
 
 const Header = () => {
 	return (
@@ -26,9 +28,9 @@ const Header = () => {
 				<Button variant="outline-secondary" className='ms-3'>Vender</Button>
 				
 			</div>
-			<div className='col-2 align-self-center'>
-				<Button className='btn btn-success align-items-center btnPry'>Publicar Propiedad</Button>
-			</div>
+
+			<PublicarLogin />
+
 		</Row>
 	);
 }

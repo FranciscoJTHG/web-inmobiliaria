@@ -9,6 +9,8 @@ import './index.css';
 import Header from './componentes/Header';
 import ResultadosFiltro from './componentes/ResultadosFiltro';
 import Main from './componentes/Main';
+import Footer from './componentes/Footer';
+import PaginationBasic from './componentes/Pagination';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -17,6 +19,8 @@ ReactDOM.render(
 		<Header />
 		<ResultadosFiltro />
 		<Main />
+		<PaginationBasic />
+		<Footer />
 	</React.StrictMode>,
 	document.getElementById('root')
 );

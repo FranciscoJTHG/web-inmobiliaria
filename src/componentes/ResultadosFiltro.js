@@ -5,9 +5,39 @@ import { Row, Button, Form } from 'react-bootstrap';
 
 const ResultadosFiltro = () => {
 
-    const [ value, onChange ] = useState({
-        valDef: 50
-    });
+    const [slider, setSlider] = useState(0);
+
+
+        //para el input
+    var Input = document.getElementById('customRange1');
+    // Input.style.setProperty("--value", Input.value);
+
+    // if (Input) {
+    //     var w = parseInt(window.getComputedStyle(Input, null).getPropertyValue('width'));
+
+    // Input.addEventListener("input", function(evt) {
+    //     console.log('even');
+    //     Input.style.setProperty("--value", Input.value);
+    // },false);
+
+    // //para la etiqueta
+    // var etq = document.querySelector('.etiqueta');
+    // if (etq) {
+        
+    //     etq.innerHTML = Input.value+"%";
+
+    //     var pxls = w / 100;
+
+    //     etq.style.left = ((Input.value * pxls) - 15) + 'px';
+
+    //     Input.addEventListener('input', function() {
+        
+    //     etq.innerHTML = Input.value+"%";
+    //     etq.style.left = ((Input.value * pxls) - 15) + 'px';
+
+    //     }, false);
+    // }
+    // }
 
 	return (
         <Row className='resFil'>
@@ -16,14 +46,11 @@ const ResultadosFiltro = () => {
                 <p>18 Propiedades Encontradas</p>
             </div>
             <div className='col-6 fil'>
-                <Button variant="outline-secondary" className='filButton1' disabled>{value.valDef}</Button>
+                {/* <Button variant="outline-secondary" className='filButton1' disabled>{slider}</Button> */}
                 <div className='range'>
-                    <input type="range" className="form-range" id="customRange1" value={value} onChange={({ target: { value:  radius }}) => {
-                        console.log(value, radius, value.valDef);
-                        onChange(radius);
-                    } }/>
+                    <input type="range" className="form-range" min='1000' max='5000' id="customRange1" onChange={(ev) => setSlider(ev.target.value)}/>
                 </div>
-                <Button variant="outline-secondary" className='filButton2' disabled>prueba</Button>
+                <Button variant="outline-secondary" className='filButton2' disabled>{slider}$</Button>
                 <div className='mt-3 checks'>
                     <Form>
                         {['checkbox'].map((type) => (

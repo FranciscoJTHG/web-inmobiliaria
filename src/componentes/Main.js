@@ -11,8 +11,8 @@ const Main = () => {
             <div className='col-6 cards'>
                 <Container>
                     <Row xs={1} md={2} className="g-4">
-                        {Array.from({ length: 6 }).map((_, idx) => (
-                            <Col>
+                        {Array.from({ length: 4 }).map((_, idx) => (
+                            <Col key={idx}>
                                 <Card>
                                     <Card.Img src={vuanh} />
                                     <Card.Body>

@@ -12,6 +12,7 @@
 
         .filButton2 {
             margin-left: 1rem;
+            margin-bottom: 1rem;
         }
 
         .checks {
@@ -42,21 +43,90 @@
             }
         }
     }
-    .result {
-        // border: 3px solid blue;
-    }
+    // .result {
+    //     border: 3px solid blue;
+    // }
 }
 
 .range {
     width: 60%;
     // height: .5rem;
     display: inline-block;
-    .form-range {
+    margin-left: 6rem;
+    // .form-range {
+    //     height: .5rem;
+    //     width: 60%;
+    // }
+    .range-form {
         height: .5rem;
+        // color: #2ba52e;
     }
 }
 
-input[type=range]::-moz-range-thumb {
+
+// input[type=range]::-moz-range-thumb {
+//     background-color: #2ba52e;
+//     border: 3px solid #535353;
+// }
+
+input[type='range'] {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type='range']:focus {
+    outline: none;
+  }
+  
+  input[type='range'],
+  input[type='range']::-webkit-slider-runnable-track,
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
     background-color: #2ba52e;
-    border: 3px solid #535353;
-}
+    width: 21px;
+    height: 21px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    margin-top: -9px;
+  }
+  
+  input[type=range]::-moz-range-thumb {
+    background-color: #2ba52e;
+    width: 16px;
+    height: 16px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+  }
+  
+  input[type=range]::-ms-thumb {
+    background-color: #2ba52e;
+    width: 21px;
+    height: 21px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    // background-color: #333;
+    height: 5px;
+    -webkit-appearance: none;
+    background-image:linear-gradient(to right, #2ba52e calc(var(--value)*1%), #535353 0);
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    outline: none;
+  }
+  
+  input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    background-image:linear-gradient(to right, #02C38A calc(var(--value)*1%), #535353 0);
+    height: 5px;
+  }
+  
+  input[type=range]::-ms-track {
+    background-color: #777;
+    // height: 3px;
+  }

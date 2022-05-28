@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // import { Map } from 'react-leaflet';
-import { MapContainer as Map, TileLayer } from 'react-leaflet';
+import { MapContainer as Map, TileLayer, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import '../styles/MapView.scss';
 import Markers from './Markers';
