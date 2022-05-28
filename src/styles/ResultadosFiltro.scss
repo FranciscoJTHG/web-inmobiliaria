@@ -5,14 +5,15 @@
     .fil {
         // border: 3px solid blue;
 
-        .filButton1 {
-            margin-left: 4rem;
-            margin-right: 1rem;
-        }
+        // .filButton1 {
+        //     margin-left: 4rem;
+        //     margin-right: 1rem;
+        // }
 
         .filButton2 {
             margin-left: 1rem;
             margin-bottom: 1rem;
+            color: black;
         }
 
         .checks {
@@ -43,9 +44,9 @@
             }
         }
     }
-    // .result {
-    //     border: 3px solid blue;
-    // }
+    .result {
+        padding-left: 2rem;
+    }
 }
 
 .range {

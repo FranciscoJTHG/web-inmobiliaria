@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Marker, Popup } from 'react-leaflet';
 import { locationIcons } from './locationIcons';
-import { popupContent, popupHead, popupText, okText, activateLasers } from "./popupStyles";
+import vuanh from '../imagenes/vu-anh.jpg';
+import '../styles/Markers.scss';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { popupContent, popupHead, popupText, okText } from "./popupStyles";
 
 const Markers = (props) => {
 
@@ -18,11 +21,25 @@ const Markers = (props) => {
                 icon={locationIcons}
             >
                 <Popup className="request-popup">
-                    <div style={popupContent}>
+                    <Card>
+                        <Card.Img src={vuanh} />
+                        <Card.Body>
+                            <Card.Title>Av. El Cuartel Qta. Puente 01</Card.Title>
+                            <Button variant="dark">Nueva</Button>
+                            <Card.Text>
+                                10 Cuartos <br />
+                                4 Baños <br />
+                                500M Construidos <br />
+                                1.000M de Terreno <br />
+                                <span className='monto'>$ 1,000,000</span>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    {/* <div style={popupContent}>
                         <img
-                        src="https://cdn3.iconfinder.com/data/icons/basicolor-arrows-checks/24/149_check_ok-512.png"
-                        width="150"
-                        height="150"
+                        src={vuanh}
+                        width="300"
+                        height="180"
                         alt="no img"
                         />
                         <div className="m-2" style={popupHead}>
@@ -37,7 +54,7 @@ const Markers = (props) => {
                         <div className="m-2" style={okText}>
                         Okay
                         </div>
-                    </div>
+                    </div> */}
                 </Popup>
             </Marker>
         </div>

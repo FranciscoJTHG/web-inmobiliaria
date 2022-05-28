@@ -2,7 +2,7 @@
 const popupContent = {
     textAlign: "center",
     height: "350px",
-    marginTop: "30px"
+    // marginTop: "30px"
 };
 
 const popupHead = {
@@ -19,8 +19,4 @@ const okText = {
     fontSize: "15px"
 };
 
-const activateLasers = () => {
-    console.log('Hola');
-}
-
-export { popupContent, popupHead, popupText, okText, activateLasers };
+export { popupContent, popupHead, popupText, okText };
