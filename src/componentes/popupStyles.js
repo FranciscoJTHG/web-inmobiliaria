@@ -19,4 +19,7 @@ const okText = {
     fontSize: "15px"
 };
 
+// https://wpmagnum.com/
+// https://www.namecheap.com/
+// https://www.hostingssi.com/ 
 export { popupContent, popupHead, popupText, okText };

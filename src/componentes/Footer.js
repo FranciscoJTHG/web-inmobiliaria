@@ -23,8 +23,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className='col-4'>
-                {/* <p className='politicas'>Politicas de Privacidad - Terminos</p> */}
-                <p className='politicas'><a href="https://www.youtube.com/">Politicas de Privacidad - Terminos</a></p>
+                <p className='politicas'><a href="#">Politicas de Privacidad - Terminos</a></p>
             </div>
         </Row>
     )
